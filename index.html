@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="font-nunito">
+    <!-- intro section -->
+    <div
+      class="h-96 lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden"
+    >
+      <!-- navbar  -->
+
+      <nav class="w-full fixed top-0 bg-white z-40 px-8">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <img class="w-8" src="img/logo.png" alt="" />
+            <span class="text-2xl font-bold text-indigo-800">Portwind</span>
+          </div>
+          <div
+            id="nav"
+            class="absolute top-0 left-0 flex justify-center w-full h-screen items-center bg-white bg-opacity-50 translate-x-full transition-all duration-500 opacity-0 pointer-events-none md:translate-x-0 md:opacity-100 md:bg-transparent md:static md:pointer-events-auto md:h-max"
+          >
+            <ul
+              class="md:flex md:space-x-4 items-center justify-center text-center uppercase text-gray-600 font-bold"
+            >
+              <li class="hover:text-gray-500 py-2"><a href="#">Home</a></li>
+              <li class="hover:text-gray-500 py-2"><a href="#">About</a></li>
+              <li class="hover:text-gray-500 py-2"><a href="#">Blogs</a></li>
+              <li class="hover:text-gray-500 py-2"><a href="#">Services</a></li>
+              <li class="hover:text-gray-500 py-2"><a href="#">Contact</a></li>
+              <li class="md:hidden mx-auto flex items-center justify-center">
+                <img src="img/moon.png" class="w-5 cursor-pointer" alt="" />
+              </li>
+            </ul>
+          </div>
+          <div class="hidden md:block">
+            <img src="img/moon.png" class="w-5 cursor-pointer" alt="" />
+          </div>
+          <button class="button-group md:hidden">
+            <ion-icon class="w-8 h-8" id="menu" name="menu-outline"></ion-icon>
+            <ion-icon
+              class="w-8 h-8 hidden"
+              id="close"
+              name="close-outline"
+            ></ion-icon>
+          </button>
+        </div>
+      </nav>
+      <!-- intro content -->
+      <!-- image  -->
+      <img
+        src="img/man.png"
+        class="absolute bottom-0 right-0 h-5/6 lg:left-0 object-cover mx-auto z-10"
+        alt="man"
+      />
+      <!-- circle  -->
+      <div
+        class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-20"
+      ></div>
+      <!-- text  -->
+      <div
+        class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold"
+      >
+        <span class="text-gray-600">Freelance</span>
+        <p id="text" class="text-red-600"></p>
+      </div>
+
+      <div
+        class="hidden lg:flex rounded-md flex-col gap-5 shadow-lg absolute top-0 bottom-0 m-auto z-10 right-10 bg-white p-6 h-fit w-1/3"
+      >
+        <h1 class="text-4xl font-bold text-indigo-900">Hi! I'm John</h1>
+        <p class="text-gray-500">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora hic,
+          impedit id nemo facilis odio eos quasi facere numquam laboriosam
+          delectus quo inventore iure blanditiis ullam natus temporibus officiis
+          quidem.
+        </p>
+        <a class="bg-indigo-600 w-fit px-3 py-2 rounded-md text-white" href="#"
+          >Hire me</a
+        >
+      </div>
+    </div>
+
+    <section class="about-section px-8 py-16 lg:p-32">
+      <div
+        class="container mx-auto grid grid-cols-1 gap-16 md:grid-cols-3 items-center"
+      >
+        <div class="left-section order-last md:order-first">
+          <div class="relative">
+            <img src="img/dots.png" class="absolute h-1/4" alt="dots" />
+            <div class="rounded-b-full rounded-t-full h-full overflow-hidden">
+              <img src="img/portrait.png" class="" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="right-section md:col-span-2 flex flex-col gap-3">
+          <h1 class="text-indigo-600 font-bold uppercase">About me</h1>
+          <h1 class="text-3xl font-bold">Better Design</h1>
+          <h1 class="text-3xl font-bold">Better Experience</h1>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+            voluptatibus corporis numquam accusantium beatae sapiente doloribus
+            deserunt atque, quam quis facere ipsum at doloremque iste dolore
+            illo, dolor iure culpa?
+          </p>
+          <h2 class="text-gray-600 uppercase font-medium">html</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+
+          <h2 class="text-gray-600 uppercase font-medium">Css</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-3/4 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+
+          <h2 class="text-gray-600 uppercase font-medium">Javascript</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-4/5 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services  -->
+    <section class="services-section px-8 py-16 lg:p-32">
+      <div class="container mx-auto">
+        <div
+          class="service-head flex flex-col gap-3 justify-center items-center md:56 lg:px-60 xl:px-70"
+        >
+          <h1 class="text-indigo-600 font-bold uppercase">services</h1>
+          <h2 class="text-2xl md:text-3xl font-bold">What do I offer?</h2>
+          <p class="text-gray-400 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+            iusto! Consequatur nisi quas minus fuga tempore dicta,
+          </p>
+        </div>
+        <div
+          class="cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-16"
+        >
+          <div class="card flex flex-col gap-2 p-6 shadow-lg rounded-lg">
+            <img src="img/icon.png " class="w-6 h-6" alt="" />
+            <h1 class="text-base font-bold">UX/UI Design</h1>
+            <p class="text-xs text-gray-400">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+              corporis mollitia ratione vitae ex aliqua
+            </p>
+            <a class="text-xs text-indigo-600" href="#">Read More</a>
+          </div>
+          <div class="card flex flex-col gap-2 p-6 shadow-lg rounded-lg">
+            <img src="img/icon.png" class="w-6 h-6" alt="" />
+            <h1 class="text-base font-bold">UX/UI Design</h1>
+            <p class="text-xs text-gray-400">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+              corporis mollitia ratione vitae ex aliqua
+            </p>
+            <a class="text-xs text-indigo-600" href="#">Read More</a>
+          </div>
+          <div class="card flex flex-col gap-2 p-6 shadow-lg rounded-lg">
+            <img src="img/icon.png" class="w-6 h-6" alt="" />
+            <h1 class="text-base font-bold">UX/UI Design</h1>
+            <p class="text-xs text-gray-400">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+              corporis mollitia ratione vitae ex aliqua
+            </p>
+            <a class="text-xs text-indigo-600" href="#">Read More</a>
+          </div>
+          <div class="card flex flex-col gap-2 p-6 shadow-lg rounded-lg">
+            <img src="img/icon.png" class="w-6 h-6" alt="" />
+            <h1 class="text-base font-bold">UX/UI Design</h1>
+            <p class="text-xs text-gray-400">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+              corporis mollitia ratione vitae ex aliqua
+            </p>
+            <a class="text-xs text-indigo-600" href="#">Read More</a>
+          </div>
+          <div class="card flex flex-col gap-2 p-6 shadow-lg rounded-lg">
+            <img src="img/icon.png" class="w-6 h-6" alt="" />
+            <h1 class="text-base font-bold">UX/UI Design</h1>
+            <p class="text-xs text-gray-400">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+              corporis mollitia ratione vitae ex aliqua
+            </p>
+            <a class="text-xs text-indigo-600" href="#">Read More</a>
+          </div>
+          <div class="card flex flex-col gap-2 p-6 shadow-lg rounded-lg">
+            <img src="img/icon.png" class="w-6 h-6" alt="" />
+            <h1 class="text-base font-bold">UX/UI Design</h1>
+            <p class="text-xs text-gray-400">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+              corporis mollitia ratione vitae ex aliqua
+            </p>
+            <a class="text-xs text-indigo-600" href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- service section end  -->
+
+    <!-- project  -->
+    <section class="project-section px-8 py-16 lg:p-32">
+      <div class="container mx-auto">
+        <div
+          class="project-head flex flex-col gap-3 justify-center items-center md:px-56 lg:px-60 xl:px-70"
+        >
+          <h1 class="text-indigo-600 font-bold uppercase">Project</h1>
+          <h2 class="text-2xl md:text-3xl font-bold">Works & Project</h2>
+          <p class="text-gray-400 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+            iusto! Consequatur nisi quas minus fuga tempore dicta,
+          </p>
+        </div>
+        <div
+          class="cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-16 mt-16"
+        >
+          <div class="card shadow-lg rounded-lg overflow-hidden">
+            <img src="img/item.png " class="" alt="" />
+          </div>
+          <div class="card shadow-lg rounded-lg overflow-hidden">
+            <img src="img/item.png " class="" alt="" />
+          </div>
+          <div class="card shadow-lg rounded-lg overflow-hidden">
+            <img src="img/item.png " class="" alt="" />
+          </div>
+          <div class="card shadow-lg rounded-lg overflow-hidden">
+            <img src="img/item.png " class="" alt="" />
+          </div>
+          <div class="card shadow-lg rounded-lg overflow-hidden">
+            <img src="img/item.png " class="" alt="" />
+          </div>
+          <div class="card shadow-lg rounded-lg overflow-hidden">
+            <img src="img/item.png " class="" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- project section end  -->
+
+    <!-- contact  -->
+    <section class="project-section px-8 py-16 lg:p-32">
+      <div class="container mx-auto">
+        <div
+          class="project-head flex flex-col gap-3 justify-center items-center md:56 lg:px-60 xl:px-70"
+        >
+          <h1 class="text-indigo-600 font-bold uppercase">Contact</h1>
+          <h2 class="text-2xl md:text-3xl font-bold">Have Question?</h2>
+          <p class="text-gray-400 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+          </p>
+        </div>
+        <div class="md:px-56 lg:px-60 xl:px-70 mt-16">
+          <form action="" class="flex flex-col gap-3">
+            <input
+              type="text"
+              placeholder="Name Surname"
+              class="border-2 border-solid border-gray-400 rounded-md py-2 px-2"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="border-2 border-solid border-gray-400 rounded-md py-2 px-2"
+            />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Message..."
+              class="border-2 border-solid border-gray-400 rounded-md py-2 px-2"
+            ></textarea>
+            <a
+              href="#"
+              class="bg-indigo-800 hover:bg-indigo-700 text-center py-2 text-white transition-all rounded-md"
+              >Submit</a
+            >
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section end  -->
+
+    <footer class="footer bg-indigo-800 px-8 py-4">
+      <div class="container mx-auto text-center">
+        <p class="text-white">Dikshit Bhardwaj | Copyright &#169; 2022</p>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.querySelector(".button-group");
+      const menu = document.querySelector("#menu");
+      const close = document.querySelector("#close");
+      const nav = document.querySelector("#nav");
+      btn.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+        close.classList.toggle("hidden");
+        nav.classList.toggle("translate-x-full");
+        //opacity-0 pointer-events-none
+        nav.classList.toggle("opacity-0");
+        nav.classList.toggle("pointer-events-none");
+      });
+    </script>
+    <script src="./autotyping.js"></script>
+  </body>
+</html>
